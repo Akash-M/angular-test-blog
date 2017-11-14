@@ -6,12 +6,16 @@
     "start": "ng serve --port 4200",
     "build:dev": "ng build --dev",
     "build:prod": "ng build --prod --aot",
+    "preinstall": "npm install",
+    "postinstall": "npm run build:prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.4.2",
+    "@angular/compiler-cli": "4.3.1",
     "@angular/animations": "^5.0.1",
     "@angular/cdk": "^2.0.0-beta.10",
     "@angular/common": "4.3.1",
