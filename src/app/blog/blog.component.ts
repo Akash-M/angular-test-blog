@@ -11,12 +11,12 @@ declare let $: any;
 })
 export class BlogComponent implements OnInit {
 
-  p: number = 1;
-  blogUrl: string = "https://jsonplaceholder.typicode.com/posts";
-  blogs;
-  filter;
-  selectedBlog = null;
-  favoriteBlogs = [];
+  private p: number = 1;
+  private blogUrl: string = "https://jsonplaceholder.typicode.com/posts";
+  private blogs;
+  private filter;
+  private selectedBlog = null;
+  private favoriteBlogs:any[] = [];
   key: string = 'title';
   reverse: boolean = false;
 

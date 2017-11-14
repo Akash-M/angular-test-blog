@@ -5,7 +5,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-header" data-background-color="blue">
-              <h4 class="title">Blogs</h4>
+              <h4 class="title" id="blog-title">Blogs</h4>
               <p class="category">
                 Info : Click on any blog to view contents and click on stars to add/remove from favorites</p>
             </div>
@@ -43,7 +43,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="card info-cards" id="selectedBlogCard">
             <div class="card-header" data-background-color="red">
-              <h4 class="title">Blog Information</h4>
+              <h4 class="title" id="blog-info-title">Blog Information</h4>
             </div>
             <div class="card-content table-responsive">
               <div *ngIf="selectedBlog==null">
@@ -64,7 +64,7 @@
           </div>
           <div class="card info-cards" id="favouriteBlogs">
             <div class="card-header" data-background-color="red">
-              <h4 class="title">Favorite Blogs</h4>
+              <h4 class="title" id="blog-fav-title">Favorite Blogs</h4>
             </div>
             <div class="card-content table-responsive">
               <div *ngIf="!(favoriteBlogs?.length > 0)">
